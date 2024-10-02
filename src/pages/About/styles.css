@@ -1,0 +1,31 @@
+.about-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Không căn giữa */
+  }
+  
+  .about-title, .about-features-title, .about-team-title, .about-contact-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+  
+  .about-description, .about-features-list, .about-team-list, .about-contact {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  .about-features-list, .about-team-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
