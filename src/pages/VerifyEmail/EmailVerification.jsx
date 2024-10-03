@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 
-
 const EmailVerification = () => {
     const { id } = useParams();
     const [message, setMessage] = useState('Đang xác thực email của bạn...');
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
-
 
     useEffect(() => {
         const verifyEmail = async () => {
@@ -25,10 +23,8 @@ const EmailVerification = () => {
             }
         };
 
-
         verifyEmail();
     }, [id, navigate]);
-
 
     return (
         <div className="email-verification-container">
